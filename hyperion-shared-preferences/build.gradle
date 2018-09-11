@@ -1,0 +1,39 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion project.compileSdkVersion
+
+
+
+    defaultConfig {
+        minSdkVersion project.minSdkVersion
+        targetSdkVersion project.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    api project(':hyperion-plugin')
+    implementation "com.android.support:appcompat-v7:${project.versionSupportLibrary}"
+    implementation "com.android.support:recyclerview-v7:${project.versionSupportLibrary}"
+    implementation "com.android.support:design:${project.versionSupportLibrary}"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "com.google.auto.service:auto-service:${project.versionAutoService}"
+    kapt "com.google.auto.service:auto-service:${project.versionAutoService}"
+    annotationProcessor "com.google.auto.service:auto-service:${project.versionAutoService}"
+}
+repositories {
+    mavenCentral()
+}

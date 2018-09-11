@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Hyperion-Kotlin.iml" filepath="$PROJECT_DIR$/Hyperion-Kotlin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hyperion-core/hyperion-core.iml" filepath="$PROJECT_DIR$/hyperion-core/hyperion-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hyperion-core-no-op/hyperion-core-no-op.iml" filepath="$PROJECT_DIR$/hyperion-core-no-op/hyperion-core-no-op.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hyperion-crash/hyperion-crash.iml" filepath="$PROJECT_DIR$/hyperion-crash/hyperion-crash.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hyperion-plugin/hyperion-plugin.iml" filepath="$PROJECT_DIR$/hyperion-plugin/hyperion-plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hyperion-sample/hyperion-sample.iml" filepath="$PROJECT_DIR$/hyperion-sample/hyperion-sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hyperion-shared-preferences/hyperion-shared-preferences.iml" filepath="$PROJECT_DIR$/hyperion-shared-preferences/hyperion-shared-preferences.iml" />
+    </modules>
+  </component>
+</project>

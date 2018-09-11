@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cintory.hyperion.core">
+
+    <!--Required for API 28 and above-->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+    <application>
+        <provider
+            android:name=".internal.HyperionInitProvider"
+            android:authorities="${applicationId}.HyperionInitProvider"
+            android:exported="false"/>
+        <service
+            android:name=".internal.HyperionService"
+            android:exported="false"/>
+    </application>
+</manifest>
